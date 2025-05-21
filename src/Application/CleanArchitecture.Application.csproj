@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
+    <PackageReference Include="FluentValidation" Version="11.9.0" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.9.0" />
+    <PackageReference Include="MediatR" Version="12.2.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.0-preview.1.24081.2" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="9.0.0-preview.1.24080.9" />
+    <PackageReference Include="Microsoft.IO.RecyclableMemoryStream" Version="2.3.2" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Domain\CleanArchitecture.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Common\Behaviors\" />
+    <Folder Include="Common\Exceptions\" />
+    <Folder Include="Common\Interfaces\" />
+    <Folder Include="Common\Mappings\" />
+    <Folder Include="Common\Models\" />
+    <Folder Include="Features\TodoItems\Commands\" />
+    <Folder Include="Features\TodoItems\Queries\" />
+    <Folder Include="Features\TodoLists\Commands\" />
+    <Folder Include="Features\TodoLists\Queries\" />
+  </ItemGroup>
+
+</Project>
